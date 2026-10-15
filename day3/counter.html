@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let counter=0
+        let deCounter=10
+        function increment()
+        {
+            counter++
+            let resultSpanElement=document.getElementById("result-span")
+            let incrementButtonElement=document.getElementById("increment-button")
+            if(counter<=10)
+            {
+                if(counter%2==0)
+                {
+                    incrementButtonElement.style.backgroundColor="red"
+                }
+                else
+                {
+                    incrementButtonElement.style.backgroundColor="green"
+                }
+                resultSpanElement.innerHTML=counter
+            }
+            
+            else
+            {
+            alert("Max limit reached")
+            incrementButtonElement.disabled=true
+            }
+
+        }
+
+        function decrement()
+        {
+            deCounter--
+            let decrementButtonElement=document.getElementById("decrement-button")
+            if(deCounter>=0)
+            {
+                if(deCounter%2==0)
+                {
+                    decrementButtonElement.style.backgroundColor="red"
+                }
+                else
+                {
+                    decrementButtonElement.style.backgroundColor="green"
+                }
+                decrementButtonElement.innerText=deCounter
+            }
+            else
+            {
+            alert("Max limit reached")
+            decrementButtonElement.disabled=true
+            }
+
+        }
+    </script>
+</head>
+<body>
+    
+    <button id="increment-button" onclick="increment()">Increment</button>
+    <span id="result-span">0</span>
+
+    <button id="decrement-button" onclick="decrement()">10</button>
+</body>
+</html>

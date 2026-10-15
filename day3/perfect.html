@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        // function perfect(num)
+        // {
+        //     console.log("In the perfect Function "+num)
+        //     let sum=0
+        //     for(let i=1;i<num;i++)
+        //     {
+        //     if(num%i==0)
+        //         {
+        //             sum+=i;
+        //         }
+        //     }
+        //     if(sum==num)
+        //         console.log(num + " is perfect")
+        //     else
+        //         console.log(num + " is not perfect")  
+        // }
+
+        // function perfect(num)
+        // {
+        //     console.log("In the perfect Function "+num)
+        //     let sum=0
+        //     for(let i=1;i<num;i++)
+        //     {
+        //     if(num%i==0)
+        //         {
+        //             sum+=i;
+        //         }
+        //     }
+        //     let answerElement=document.getElementById("answer-element")
+        //     if(sum==num)
+        //         answerElement.innerHTML= num + " is perfect"
+        //     else
+        //         answerElement.innerHTML=num + " is not perfect" 
+        // }
+
+        let perfect=num=>
+        {
+            console.log("In the perfect Function "+num)
+            let sum=0
+            for(let i=1;i<num;i++)
+            {
+            if(num%i==0)
+                {
+                    sum+=i;
+                }
+            }
+            let answerElement=document.getElementById("answer-element")
+            if(sum==num)
+                answerElement.innerHTML= num + " is perfect"
+            else
+                answerElement.innerHTML=num + " is not perfect" 
+        }
+        function checkPerfect()
+        {
+            // console.log("Hi There!!!")
+            // alert("Hi There")
+            let inputElement=document.getElementById("num1")
+            inputElement.style.backgroundColor="red"
+            inputElement.style.border="10px solid blue"
+            let num= inputElement.value
+            console.log("In the checkPerfect Function "+num)
+            perfect(num)
+        }
+    </script>
+</head>
+<body>
+    <label>Enter a Number</label>
+    <input type="number" id="num1">
+    <button id="perfect-button" onclick="checkPerfect()">Check Perfect</button>
+    <p id="answer-element">Answer will be visible here in sometime</p>
+</body>
+</html>
