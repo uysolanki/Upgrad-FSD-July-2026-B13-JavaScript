@@ -50,8 +50,21 @@ let fruit=""        //non empty string
 let bikes=["honda","suzuki"]        //empty array is also truthy
 let student={rno:1}      //empty object is also truthy
 console.log(Boolean(student))
+let ans=Infinity    //truthy
+
+//falsy
+let w=0         //falsy
+let e=-0        //falsy
+let r=+0        //falsy
+let t=null      //falsy
+let y=undefined //falsy
+let u=NaN       //falsy
+let i=""        //falsy
+
 
 if(student)
     console.log("Hi")
 else
     console.log("bye")
+
+
