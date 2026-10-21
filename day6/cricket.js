@@ -1,4 +1,4 @@
-import {bat as batsmen,bowl as bowler,ar as allrounder} from './day6b.js'
+import myname,{bat as batsmen,bowl as bowler,ar as allrounder} from './day6b.js'
 // import {team} from './day6b.js'
 import {team as rcb} from './day6b.js'
 
@@ -26,3 +26,4 @@ console.log(`My Favir all rounder is ${indianAr}`)
 
 console.log(areaCircle(5))
 console.log(areaRect(10,5))
+console.log(myname)

@@ -14,12 +14,17 @@ let areaRect=(len,br)=>
 {
     return len*br
 }
+
+name="Ben"
+
 export {bat}
 export {bowl}
 export {ar}
 export {team}
 export {areaCircle}
 export {areaRect}
+export default name
+
 
 
 
