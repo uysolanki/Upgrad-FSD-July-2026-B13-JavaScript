@@ -247,3 +247,44 @@ let mensProducts=products.filter(
 )
 
 console.log(mensProducts)
+
+let productCategories=products.map(
+    (product)=>{
+        return product.category
+    }
+)
+
+console.log(productCategories)
+
+let uniqueCategories=new Set(productCategories)
+console.log(uniqueCategories)
+
+let allCategories=[...uniqueCategories,"All"]
+console.log(allCategories)
+
+
+let carsOrdereredListElement=document.getElementById("cars-list")
+
+let ul=""
+
+allCategories.forEach(
+    (car)=>
+    {
+        ul+=`<li>${car}</li>`
+    }
+)
+
+carsOrdereredListElement.innerHTML=ul
+
+//spread operator ...
+
+let cars=["Audi","BMW","Merc"]
+
+// let sportsCar=["Audi","BMW","Merc","Ferrari"]
+
+let sportsCar1= [...cars,"Ferrari"]
+
+console.log(cars)
+console.log(sportsCar1)
+
+let ol=""
