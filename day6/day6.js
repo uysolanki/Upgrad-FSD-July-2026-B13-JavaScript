@@ -256,3 +256,8 @@ let paraList=products.map(
     (product)=>`<p>I have ${product.title}</p>`).join("");
 
 productsDivElement.innerHTML=paraList
+
+
+//divAkshata=""+ <p>Laptop</p>
+
+//<p>Laptop</p>+<p>Mobile</p>
