@@ -12,9 +12,10 @@
 
 
 
-setInterval(
+setTimeout(
     ()=>{
         console.log("Full Stack Development")
-    },1000
+    },10000
 )
 
+console.log("Java")

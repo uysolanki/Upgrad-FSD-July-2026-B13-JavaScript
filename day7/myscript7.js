@@ -13,3 +13,8 @@ function test(callback)
 }
 
 test(display)
+
+
+printResult
+
+addition(10,20) 
