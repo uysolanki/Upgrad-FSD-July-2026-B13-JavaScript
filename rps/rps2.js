@@ -3,18 +3,18 @@ const paperButton=document.querySelector("#paper-btn")
 const scissorsButton=document.querySelector("#scissors-btn")
 const resetButton=document.querySelector("#reset-btn")
 
-rockButton.addEventListener('click',()=>playGame("Rock"))
-paperButton.addEventListener('click',()=>playGame("Paper"))
-scissorsButton.addEventListener('click',()=>playGame("Scissors"))
-resetButton.addEventListener('click', resetScore)
-let win=0
-let loss=0
-let tie=0
-
 const movesPara=document.querySelector("#moves-para")
 const resultsPara=document.querySelector("#result-para")
 const scorePara=document.querySelector("#score-para")
 
+rockButton.addEventListener('click',()=>playGame("Rock"))
+paperButton.addEventListener('click',()=>playGame("Paper"))
+scissorsButton.addEventListener('click',()=>playGame("Scissors"))
+resetButton.addEventListener('click', resetScore)
+
+let win=0
+let loss=0
+let tie=0
 let result=""
 
 function playGame(playerMove)
@@ -57,10 +57,11 @@ function playGame(playerMove)
        case "Win":  win+=1; break;
        case "Tie":  tie+=1; break;
     }
-
+    
+    displayMoves(playerMove,computerMove)
     displayResult()
     displayScore()
-    displayMoves(playerMove,computerMove)
+   
 }
 function generateComputerMove()
 {
