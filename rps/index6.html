@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="module" defer src="./rps6.js"></script>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+        .move-btn{
+            height: 80px;
+            width: 80px;
+            border: 3px solid red;
+            border-radius: 40px;
+            background-color: transparent;
+            cursor: pointer;
+
+        }
+
+        .move-btn img{
+            height:60px;
+            width: 60px;
+        }
+
+        .small-move-icon{
+            height:20px;
+            width: 20px;
+            background-color: transparent;
+        }
+
+        #autoplay-btn{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <button class="move-btn" id="rock-btn"><img src="../images/rock-emoji.png" /></button>
+    <button class="move-btn" id="paper-btn"><img src="../images/paper-emoji.png" /></button>
+    <button class="move-btn" id="scissors-btn"><img src="../images/scissors-emoji.png" /></button>
+    <button class="move-btn" id="reset-btn"><img src="../images/refresh-emoji.png" /></button>
+    <p id="moves-para"></p>
+    <p id="result-para"></p>
+    <p id="score-para"></p>
+    <button id="autoplay-btn">Autoplay Mode OFF</button>
+</body>
+</html>
