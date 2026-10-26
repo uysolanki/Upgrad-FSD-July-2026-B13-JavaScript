@@ -1,4 +1,5 @@
 
+const paraElemenet=document.querySelector("#one").innerHTML="load...."
 function display(value)
 {
 const paraElemenet=document.querySelector("#one").innerHTML=value
