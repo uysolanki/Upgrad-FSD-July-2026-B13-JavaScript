@@ -15,8 +15,6 @@ function display(value)
 }
 
 
-
-
 function voting(age)
 {
     return new Promise((resolve,reject)=>{
