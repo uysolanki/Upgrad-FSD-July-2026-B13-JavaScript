@@ -3,3 +3,14 @@ ol {
     justify-content: space-between;
     list-style: none;
 }
+
+ol li{
+    cursor: pointer;
+}
+
+
+.b13 {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
