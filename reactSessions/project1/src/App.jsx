@@ -7,6 +7,7 @@ import Counter2b from './components/Counter2b'
 import Menubar from './components/Menubar'
 import Menubar2b from './components/Menubar2b'
 import Counter2c from './components/Counter2c'
+import Counter2d from './components/Counter2d'
 
 const App = () => {
   return (
@@ -14,7 +15,7 @@ const App = () => {
   {/* <Test/> 
   <Counter2b/> 
   <Menubar2b/> */}
-  <Counter2c/>
+  <Counter2d/>
   </>
   )
 }
