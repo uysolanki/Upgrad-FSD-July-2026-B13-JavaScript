@@ -9,7 +9,8 @@ const Menubar2b = () => {
   }
   return (
     // <ol style={myCSSForOL}>
-     <ol style={{"backgroundColor":"pink","color":"white"}}>
+    //  <ol style={{"backgroundColor":"pink","color":"white"}}>
+    <ol className='fsd'>
         {menus.map(
             (menu,index)=><li onClick={()=>activity(menu)} key={index}>{menu}</li> 
         )}

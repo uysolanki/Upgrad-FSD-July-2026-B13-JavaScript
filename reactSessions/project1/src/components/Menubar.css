@@ -14,3 +14,9 @@ ol li{
     justify-content: space-between;
     list-style: none;
 }
+
+.fsd{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}

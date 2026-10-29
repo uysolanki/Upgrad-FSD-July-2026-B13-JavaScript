@@ -1,4 +1,4 @@
-const menus=["File", "Edit", "View","Selection","Go"]
+const menus=["Test", "Counter", "Menubar"]
 
 
 export default menus
