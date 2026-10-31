@@ -12,6 +12,8 @@ import TextArea from './components/TextArea'
 import TextArea1 from './components/TextArea1'
 import StudentPage from './components/StudentPage'
 import StudentPage2 from './components/StudentPage2'
+import Library from './components/Library'
+import Library2 from './components/Library2'
 
 const App = () => {
   return (
@@ -21,7 +23,7 @@ const App = () => {
   <Menubar2b/> 
   <Counter2d/>
   <TextArea1/>*/}
-  <StudentPage2/>
+  <Library2/>
   </>
   )
 }
