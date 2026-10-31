@@ -9,6 +9,9 @@ import Menubar2b from './components/Menubar2b'
 import Counter2c from './components/Counter2c'
 import Counter2d from './components/Counter2d'
 import TextArea from './components/TextArea'
+import TextArea1 from './components/TextArea1'
+import StudentPage from './components/StudentPage'
+import StudentPage2 from './components/StudentPage2'
 
 const App = () => {
   return (
@@ -16,8 +19,9 @@ const App = () => {
   {/* <Test/> 
   <Counter2b/> 
   <Menubar2b/> 
-  <Counter2d/>*/}
-  <TextArea/>
+  <Counter2d/>
+  <TextArea1/>*/}
+  <StudentPage2/>
   </>
   )
 }
