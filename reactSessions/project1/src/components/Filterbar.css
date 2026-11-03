@@ -1,0 +1,10 @@
+ol {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    background-color: lightblue;
+}
+
+ol li{
+    cursor: pointer;
+}

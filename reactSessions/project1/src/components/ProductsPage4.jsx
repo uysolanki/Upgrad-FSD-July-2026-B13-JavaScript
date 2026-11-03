@@ -2,12 +2,43 @@
 import React, { useState } from 'react'
 import myProducts from '../../data/products'
 import './ProductsPage.css'
+import Filterbar from './Filterbar'
 
 const ProductsPage4 = () => {
 
-    const [products] = useState(myProducts)
+    const [products,setProducts] = useState(myProducts)
+    const [buproducts,setBuproducts] = useState(myProducts)
 
+    const productCategories=buproducts.map(
+        (prod,index)=>prod.category
+    )
+
+    console.log(productCategories)
+
+    const uniqueCategories=new Set(productCategories)
+
+    console.log(uniqueCategories)
+
+    const allCategories=[...uniqueCategories,'All']
+    console.log(allCategories)
+
+    function filterProductByCategory(value)  //electronics
+    {
+        if(value==='All')
+        {
+            setProducts(buproducts)
+        }
+        else
+        {
+        const filteredProducts=buproducts.filter(
+            (prod)=>prod.category===value
+        )
+        setProducts(filteredProducts)
+        }
+    }
     return (
+        <>
+        <Filterbar menu={allCategories} handleClick={filterProductByCategory}/>
         <div className="container py-5">
 
             {/* Page Header */}
@@ -87,6 +118,7 @@ const ProductsPage4 = () => {
             </div>
 
         </div>
+        </>
     )
 }
 
