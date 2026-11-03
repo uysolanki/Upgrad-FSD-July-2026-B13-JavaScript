@@ -1,0 +1,93 @@
+
+import React, { useState } from 'react'
+import myProducts from '../../data/products'
+import './ProductsPage.css'
+
+const ProductsPage4 = () => {
+
+    const [products] = useState(myProducts)
+
+    return (
+        <div className="container py-5">
+
+            {/* Page Header */}
+            <div className="text-center mb-5">
+
+                <span className="badge bg-primary-subtle text-primary px-3 py-2 mb-3">
+                    OUR COLLECTION
+                </span>
+
+                <h1 className="fw-bold display-5">
+                    Explore Products
+                </h1>
+
+                <p className="text-secondary">
+                    Discover amazing products at the best prices.
+                </p>
+
+            </div>
+
+            {/* Product Grid */}
+            <div className="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4 g-4">
+
+                {products.map((prod, index) => (
+
+                    <div className="col" key={prod.id || index}>
+
+                        <div className="card product-card h-100 border-0 shadow-sm">
+
+                            {/* Product Image */}
+                            <div className="product-image-container">
+
+                                <img
+                                    src={prod.image}
+                                    className="card-img-top product-image"
+                                    alt={prod.title}
+                                    loading="lazy"
+                                />
+
+                                <span className="badge bg-danger product-badge">
+                                    Popular
+                                </span>
+
+                            </div>
+
+                            {/* Product Details */}
+                            <div className="card-body d-flex flex-column p-4">
+
+                                <h5 className="card-title fw-bold product-title">
+                                    {prod.title}
+                                </h5>
+
+                                <p className="card-text text-secondary product-description">
+                                    {prod.description}
+                                </p>
+
+                                <div className="mt-auto">
+
+                                    <h4 className="fw-bold text-primary mb-3">
+                                        ${prod.price}
+                                    </h4>
+
+                                    <button className="btn btn-primary w-100 rounded-pill fw-semibold">
+                                        <i className="bi bi-cart-plus me-2"></i>
+                                        Add to Cart
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                ))}
+
+            </div>
+
+        </div>
+    )
+}
+
+export default ProductsPage4
