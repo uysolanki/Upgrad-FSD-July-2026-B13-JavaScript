@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import myProducts from '../../data/products'
 import './ProductsPage.css'
 import Filterbar from './Filterbar'
+import Searchbar from './Searchbar'
 
 const ProductsPage4 = () => {
 
@@ -36,9 +37,22 @@ const ProductsPage4 = () => {
         setProducts(filteredProducts)
         }
     }
+
+    function searchrProductByTitle(event)
+    {
+        let searchedText=event.target.value
+        console.log(searchedText)
+
+        const searchedProducts=buproducts.filter(
+            (product)=> product.title.toLowerCase().includes(searchedText.toLowerCase()) ||
+                        product.description.toLowerCase().includes(searchedText.toLowerCase())
+        )
+        setProducts(searchedProducts)
+    }
     return (
         <>
         <Filterbar menu={allCategories} handleClick={filterProductByCategory}/>
+        <Searchbar handleOnChange={searchrProductByTitle}/>
         <div className="container py-5">
 
             {/* Page Header */}

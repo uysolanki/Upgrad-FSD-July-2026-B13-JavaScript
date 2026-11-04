@@ -18,6 +18,7 @@ import ProductsPage from './components/ProductsPage'
 import ProductsPage2 from './components/ProductsPage2'
 import ProductsPage3 from './components/ProductsPage3'
 import ProductsPage4 from './components/ProductsPage4'
+import ProductsPage5 from './components/ProductsPage5'
 
 const App = () => {
   return (
@@ -27,7 +28,7 @@ const App = () => {
   <Menubar2b/> 
   <Counter2d/>
   <TextArea1/>*/}
-  <ProductsPage4/>
+  <ProductsPage5/>
   </>
   )
 }
