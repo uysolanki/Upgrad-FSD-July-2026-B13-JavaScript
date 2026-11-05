@@ -1,0 +1,10 @@
+ul{
+    display: flex;
+    list-style: none;
+    background-color: yellow;
+    justify-content: space-around;
+}
+
+ul li{
+    cursor: pointer;
+}
