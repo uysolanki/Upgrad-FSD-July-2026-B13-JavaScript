@@ -11,11 +11,7 @@ const ProductsPage6 = () => {
     const [products, setProducts] = useState([])
     const [buproducts, setBuproducts] = useState([])
 
-    setInterval(
-        ()=>{
-            console.log("Hi")
-        },1000
-    )
+  
     useEffect(
         ()=>{
             loadData()
